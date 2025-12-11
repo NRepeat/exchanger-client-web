@@ -1,0 +1,144 @@
+@media screen and (max-width: $wide) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .logo {
+    img {
+      max-width: 85%;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 105px;
+  position: relative;
+  z-index: 1001;
+  background: $black2;
+  //display: flex;
+  //justify-content: space-evenly;
+  //align-items: center;
+  border-bottom: 2px solid #222a35;
+  @include respond-to(phone) {
+    margin-bottom: 50px;
+
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  .container-1 {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: $ffRoboto_Regular;
+    font-weight: 400;
+    font-size: 15px;
+
+    @include respond-to(phone) {
+      padding: 15px 10px;
+    }
+
+
+    //div {
+    //  margin: 0px 10px;
+    //}
+  }
+
+  .right-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .dropdown-lang {
+
+    //float: left;
+    //overflow: visible;
+    margin-right: 25.35px;
+
+    .inner_dropdown {
+      display: flex;
+      justify-content: space-between;
+
+	  
+    }
+
+    ul {
+      position: absolute;
+      background-color: $white2;
+	  border-radius: 8px;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 9;
+      overflow: hidden;
+
+
+      @include respond-to(phone) {
+        min-width: 140px;
+      }
+
+
+      li {
+        padding: 12px 16px;
+        text-align: left;
+
+        &:hover {
+          background-color: rgba(236, 236, 236, 0.83);
+        }
+
+		div{
+			display: flex;
+			align-items: center;
+		}
+      }
+
+    }
+
+    &-img-arrow {
+      margin-left: 16px;
+    }
+
+    &-inner-img {
+
+      img {
+        width: 30px;
+        height: 21px;
+        border-radius: 19%;
+		display: block;
+      }
+
+      span {
+        margin-left: 10px;
+      }
+    }
+
+  }
+
+}
+
+.registration {
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-family: $ffMuseoSansCyrl_2;
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+}

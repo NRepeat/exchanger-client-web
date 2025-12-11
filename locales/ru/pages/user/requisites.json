@@ -1,0 +1,15 @@
+{
+  "requisites": "Реквизиты",
+  "electronic_currency": "Электронные валюты",
+  "crypto_currency": "криптовалюты",
+  "bank_accounts": "банковские счета",
+  "you_none": "у вас нет ни одного",
+  "yandex_money": "Яндекс.деньги реквизита",
+  "add_wallet": "Добавить кошелек",
+  "verified_wallet": "Кошелек верифицирован",
+  "currency": "Валюта",
+  "wallet": "Кошелек",
+  "save": "Сохранить",
+  "pending":"В процессе",
+  "person":"Пользователь"
+}

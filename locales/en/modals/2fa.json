@@ -1,0 +1,11 @@
+{
+  "confirmCode": "CONFIRM CODE:",
+  "scan": "Scan the QR Code",
+  "copy": "Or copy the secret code",
+  "copied": "Copied!",
+  "write": "Enter confirmation code",
+  "write_p": "Enter code",
+  "confirm": "CONFIRM",
+  "app": "App",
+  "operation": "operation impossible"
+}

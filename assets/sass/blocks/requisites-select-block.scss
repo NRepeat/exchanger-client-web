@@ -1,0 +1,42 @@
+
+.requisites-select-block {
+
+  .form {
+    padding: 2.8rem 0;
+    position: relative;
+    width: 100%;
+
+    &:after, &:before {
+      position: absolute;
+      z-index: 0;
+      opacity: .1;
+    }
+
+    &:after {
+      content: url(~assets/img/001.svg);
+      top: -5.5rem;
+      right: -18rem;
+      width: 46rem;
+    }
+
+    &:before {
+      content: url(~assets/img/002.svg);
+      bottom: -24rem;
+      left: -18.5rem;
+      width: 46rem;
+    }
+  }
+
+  &--btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+
+}

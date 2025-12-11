@@ -1,0 +1,11 @@
+{
+  "name": "workers-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/kv-asset-handler": "0.3.0"
+  }
+}

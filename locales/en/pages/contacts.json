@@ -1,0 +1,13 @@
+{
+  "title": "Contacts",
+  "chat": "Start chat",
+  "warn": "Attention! The exchange is made only through the site.",
+  "feedback": "Feedback",
+  "your_name": "Name",
+  "your_email": "Email",
+  "msg_text": "Enter feedback text",
+  "send_btn": "Send message",
+  "agree": "pressing this button ",
+  "agree_rules": "I agree with the rules",
+  "requestAccepted": "Your request is accepted, wait for a reply to your mail."
+}

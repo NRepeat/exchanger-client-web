@@ -1,0 +1,67 @@
+.verification {
+
+  margin-top: 20px;
+  font-size: 16px;
+
+
+  &__item {
+
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 0;
+
+
+    &--passport {
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+
+    &--phone {
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+
+    &--email {
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+
+    &--facebook {
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    :nth-last-child(1) {
+      margin-right: 0;
+    }
+
+  }
+
+}

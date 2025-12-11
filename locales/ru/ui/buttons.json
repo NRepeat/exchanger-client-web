@@ -1,0 +1,27 @@
+{
+  "back": "Вернуться на сайт",
+  "news_link": "Сейчас читайте новости",
+  "save": "Сохранить",
+  "2factor": "Включить 2-фа защиту",
+  "reset2factor": "Отключить 2-фа защиту",
+  "profile_notifications": "Оповещения",
+  "block_my_account": "Заблокировать свой аккаунт",
+  "delete_my_account": "Удалить свой аккаунт",
+  "sign_in": "Вход",
+  "sign_up": "Регистрация",
+  "confirm": "Подтвердить",
+
+  "restore": "Восстановление",
+  "forget": "Забыли пароль?",
+  "password_recovery": "Восстановление пароля",
+  "profile": "Профиль",
+  "affiliate": "Партнерская программа",
+  "requests": "Заявки на обмен",
+  "send_reviews_form": "Отправить",
+  "api": "API",
+  "partners_start_chat": "Начать чат",
+  "create_api_access": "Создать API доступ",
+  "documentation_api": "Документация",
+  "btn": "Оплатить",
+  "requisites":"Кошелек"
+}

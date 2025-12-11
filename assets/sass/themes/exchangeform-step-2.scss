@@ -1,0 +1,217 @@
+
+.m-top-18 {
+  margin-top: 18px;
+}
+
+.p-top-16 {
+  padding-top: 16px;
+}
+
+.exchangeform {
+  &__date {
+    padding: 8px 22px 10px 6px;
+    min-height: 50px;
+    border: 1px solid #dedede;
+    background: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+
+      span, p {
+        margin: 0 6px;
+      }
+
+      &-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        flex: none;
+
+          img {
+            position: static;
+            width: 100%;
+            max-width: 30px;
+            height: auto;
+            transform: none;
+          }
+      }
+
+      &-name {
+        font-size: 16px !important;
+        white-space: nowrap;
+        flex: 1;
+        color: #212121 !important;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block !important;
+      }
+  }
+  &-step-2 {
+    &-page {
+      .container--form {
+        h2 {
+          color: $white;
+          font-size: 1.5em;
+          font-family: $ffMuseoSansCyrl_2;
+          font-weight: 100;
+          margin-top: 20px;
+          text-transform: none;
+        }
+      }
+      .form {
+        max-width: 714px;
+      }
+      .form-v2 {
+        flex-direction: column;
+
+        @media screen and (min-width: 861px) {
+          padding-bottom: 0;
+        }
+
+        >div {
+          padding: 40px 36px;
+        }
+      }
+      .form--title {
+        margin-bottom: 0;
+
+        .dataInput & {
+          margin-bottom: 24px;
+        }
+      }
+      .form-v2--input {
+        flex: 1;
+        min-width: calc(50% - 20px);
+
+        input {
+          max-width: 448px;
+          padding-top: 15px;
+        }
+      }
+      .form-v2--number {
+        max-width: 448px;
+        position: relative;
+      }
+      .give {
+        background: #F9FBFD;
+      }
+      .btn-submitForm {
+        line-height: 23.44px;
+        font-weight: 500;
+        font-family: $ffRoboto_Medium;
+        font-size: 20px;
+      }
+
+      .info-title {
+        font-size: 1.5rem;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: #191D26;
+        margin-bottom: 12px;
+      }
+      .form-v2--number {
+        .currency--symbol {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          text-transform: uppercase;
+          color: $dark-gray;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+            img {
+              position: static;
+              width: 100%;
+              max-width: 30px;
+              height: auto;
+              transform: none;
+            }
+        }
+      }
+    }
+    &--info {
+      padding: 8px;
+
+      @media screen and (min-width: 861px) {
+        padding: 40px 36px;
+      }
+
+      p {
+        font-size: 1.0rem;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: $dark-gray;
+      }
+      ol {
+        margin-top: 12px;
+        list-style-type: decimal;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 12px;
+        font-family: $ffMuseoSansCyrl_2;
+        font-size: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 1rem;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #191D26;
+          font-family: $ffMuseoSansCyrl_0;
+        }
+        a {
+          color: #3DAEA4;
+          font-family: $ffMuseoSansCyrl_2;
+
+          &:hover {
+            color: #017CD1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-v2--group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 -10px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 -5px;
+  }
+
+  .form-v2--input {
+    margin: 0 10px;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 5px;
+    }
+  }
+}
+
+.label {
+  font-family: $ffMuseoSansCyrl_0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  display: block;
+  letter-spacing: 0.2px;
+  color: $dark-gray;
+  margin-bottom: 4px;
+  min-height: 28px;
+}
+

@@ -1,0 +1,18 @@
+{
+  "exchange": "Exchange total",
+  "checkAndConfirm": "Check and confirm your payment data:",
+  "youReceive": "You receive:",
+  "total": "Total",
+  "contact_details": "Contact details",
+  "phone": "Phone",
+  "cancel": "Cancel app",
+  "verification": "Get verification",
+  "pay": "Pay",
+  "confirm": "By clicking this button, I agree with",
+  "rules": "exchange rules",
+  "passVerification":"Pass verification",
+  "bills":"Bills",
+  "inProcess":"In process",
+  "success":"Success",
+  "personalVerification":"Personal verification"
+}

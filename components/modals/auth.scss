@@ -1,0 +1,39 @@
+/* todo move to assets */
+
+.hide {
+  position: absolute;
+  top: -9999px;
+}
+
+.flick {
+  font-size: 0px;
+}
+
+.hide:focus + .flex-row .flick {
+  font-size: 18px;
+  animation: flick 2s .2s infinite;
+}
+
+@keyframes flick {
+  0% {
+    color: auto;
+  }
+  50% {
+    color: white;
+  }
+}
+
+.number {
+  width: 42px;
+  height: 48px;
+  border: 1px solid #EEE;
+  border-radius: 7px;
+  font-size: 18px;
+  top: 8px;
+  position: relative;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(250, 250, 250, 1);
+}

@@ -1,0 +1,112 @@
+{
+  "title": "Online service <span>for buying and selling digital assets</span>",
+  "descr": "GlobalPay – in money we trust",
+  "ieDetected": "Sorry, Internet Explorer is unsupported anymore. Please check another browser:",
+  "notificationTitle": "Notifications",
+  "created": "Created",
+  "updated": "Updated",
+  "from": {
+    "title": "Give",
+    "choose": "Choose a currency",
+    "currency": "Currency",
+    "all": "all",
+    "min": "Min:",
+    "max": "Max:"
+  },
+  "to": {
+    "title": "Take",
+    "choose": "Choose a currency",
+    "currency": "Currency",
+    "all": "all",
+    "reserve": "Reserve:",
+    "rate": "Rate:",
+    "fee": "Fee:"
+  },
+  "details": {
+    "choose": "Fill in",
+    "title": "Exchange details",
+    "enter_form": "Enter form",
+    "amount": "Amount",
+    "personalData": "Personal info",
+    "instructionTitle": "Change {from} to {to}",
+    "stepDescription": "To exchange, you need to perform several steps:",
+    "step_p1": "Read the terms and conditions of the contract for the provision of services, by pressing the «Start exchange» button you confirm agreement ",
+    "step_p2": "Fill in all fields of the submitted form. Click the button",
+    "step_p3": "Pay the request. To do this, you should make a transfer of the required amount, following the instructions on our website.",
+    "step_p4": "After performing the specified actions, the system will move you to the \"Request status\" page, where the status of your transfer will be specified",
+    "needVerifCurrency": "This direction requires verification of the account",
+    "needVerifPerson": "This direction requires verification.",
+    "advice": "Read carefully",
+    "email": "Email",
+    "pocket_from": "With Wallet",
+    "pocket_to": "In wallet",
+    "rules": "By clicking this button, I agree with the rules.",
+    "agree": "I agree with the",
+    "agree_kyc": "I agree with the",
+    "agree_link": "rules",
+    "agree_link_kyc": "KYC/AML policy",
+    "submit": "Start exchange",
+    "pleaseSelectRoute": "Select the exchange direction",
+    "select_p_1": "Select the currency you",
+    "select_p_2": "want to give and receive",
+    "errorRoute": "Route isn't available",
+    "error_p_1": "At the moment you cannot create ",
+    "error_p_2": "an exchange in the current direction.",
+    "pleaseWait": "Please wait...",
+    "loading_p_1": "Loading data in the direction.",
+    "loading_p_2": "It'll just take a few seconds."
+  },
+  "advantages": {
+    "title1": "Complete confidentiality and anonymity",
+    "text1": "",
+    "title2": "Highly qualified support service",
+    "text2": "",
+    "title3": "Payments to bank accounts and cards",
+    "text3": "",
+    "title4": "Payments to China (ALIPAY/WECHAT/UNION PAY)",
+    "text4": "",
+    "title5": "Cash transfers across Ukraine and the world",
+    "text5": ""
+  },
+  "stars": {
+    "title": "<span>Our service helps to</span> exchange safely and quickly.",
+    "help": "timely assistance",
+    "help_t": "Help",
+    "privacy": "We do not store or share your personal information with third parties.",
+    "privacy_t": "Confidentiality",
+    "support": "Polite technical support around the clock ready to help you on any matter.",
+    "support_t": "Support",
+    "guarantee": "100% translation guarantee. The reliability of our service is confirmed by numerous reviews.",
+    "guarantee_t": "Warranty"
+  },
+  "reserves": {
+    "title": "Reserves",
+    "all": "See all",
+    "order": "Get Reserve"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "all": "See all"
+  },
+  "title_partners": "Partners",
+  "attention": "Attention current direction not available",
+  "haven_t_reserve": "Now we haven't got reserve for exchange.",
+  "correct": "Correct",
+  "messages": {
+    "signIn": "Welcome!",
+    "reviewSuccess": "Thank you! Your review has been successfully added.",
+    "mustBeAgree": "You must be agree with rules.",
+    "checkEmail": "check Your e-mail for confirm message",
+    "checkEmailInstructions": "check Your e-mail for instructions",
+    "changedPassword": "Your password successfully changed",
+    "editMain": "Your profile are successfully saved",
+    "qrCreated": "QR-code created",
+    "2faDeleted": "2FA deleted",
+    "2faConfirmed": "2FA confirmed",
+    "goodBye": "Goodbye!",
+    "checkFields": "Check every fields are correct"
+  },
+  "routes": {
+    "text": "Output {from} to {to}"
+  }
+}

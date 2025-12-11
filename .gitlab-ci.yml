@@ -1,0 +1,113 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'merge_request_event'
+
+variables:
+  CONFIG_VARIABLE_FOR_BRANCH: "${CI_COMMIT_REF_SLUG}_CLIENT_CONFIG_JSON"
+
+build-client:
+  stage: build
+  image: boxexchanger/kaniko
+  script:
+    - docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY <<<$CI_REGISTRY_PASSWORD
+    - mkdir config
+    - eval "configForBranch=\$$(echo $CONFIG_VARIABLE_FOR_BRANCH | sed 's/[0-9 ,/-]//g')"
+    - if [ -n "$configForBranch" ]; then echo $configForBranch > config/app.json; else echo $CLIENT_CONFIG_JSON > config/app.json; fi
+    - docker run -v /home/gitlab-runner/.docker/config.json:/kaniko/.docker/config.json
+      -v $PWD:/build gcr.io/kaniko-project/executor:v1.19.2
+      --dockerfile "/build/docker/Dockerfile"
+      --context "/build"
+      --cache=true
+      --destination "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}"
+  tags:
+    - client-v1
+  rules:
+    - if: '$SSR == null && $RUNNER_LEGACY == null'
+
+legacy-build-client:
+  stage: build
+  image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay2
+  services:
+    - name: docker:25.0.3-dind
+      alias: docker
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - mkdir config
+    - eval "configForBranch=\$$(echo $CONFIG_VARIABLE_FOR_BRANCH | sed 's/[0-9 ,/-]//g')"
+    - if [ -n "$configForBranch" ]; then echo $configForBranch > config/app.json; else echo $CLIENT_CONFIG_JSON > config/app.json; fi
+    - docker build --pull -f docker/Dockerfile -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG .
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  tags:
+    - legacy-client-v1
+  rules:
+    - if: '$SSR == null && $RUNNER_LEGACY != null'
+
+build-ssr-client:
+  stage: build
+  image: boxexchanger/kaniko
+  script:
+    - docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY <<<$CI_REGISTRY_PASSWORD
+    - mkdir config
+    - eval "configForBranch=\$$(echo $CONFIG_VARIABLE_FOR_BRANCH | sed 's/[0-9 ,/-]//g')"
+    - if [ -n "$configForBranch" ]; then echo $configForBranch > config/app.json; else echo $CLIENT_CONFIG_JSON > config/app.json; fi
+    - docker run -v /home/gitlab-runner/.docker/config.json:/kaniko/.docker/config.json
+      -v $PWD:/build gcr.io/kaniko-project/executor:v1.19.2
+      --dockerfile "/build/docker/ssr.Dockerfile"
+      --context "/build"
+      --cache=true
+      --destination "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}"
+  tags:
+    - client-v1
+  rules:
+    - if: '$SSR != null && $RUNNER_LEGACY == null'
+
+legacy-build-ssr-client:
+  stage: build
+  image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay2
+  services:
+    - name: docker:25.0.3-dind
+      alias: docker
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - mkdir config
+    - eval "configForBranch=\$$(echo $CONFIG_VARIABLE_FOR_BRANCH | sed 's/[0-9 ,/-]//g')"
+    - if [ -n "$configForBranch" ]; then echo $configForBranch > config/app.json; else echo $CLIENT_CONFIG_JSON > config/app.json; fi
+    - docker build --pull -f docker/ssr.Dockerfile -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG .
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  tags:
+    - legacy-client-v1
+  rules:
+    - if: '$SSR != null && $RUNNER_LEGACY != null'
+
+
+
+cf-worker-deploy-client:
+  stage: build
+  image: node:20-alpine
+  script:
+    - mkdir config
+    - eval "configForBranch=\$$(echo $CONFIG_VARIABLE_FOR_BRANCH | sed 's/[0-9 ,/-]//g')"
+    - if [ -n "$configForBranch" ]; then echo $configForBranch > config/app.json; else echo $CLIENT_CONFIG_JSON > config/app.json; fi
+    - npm ci
+    - npm run configure
+    - NODE_OPTIONS=--max-old-space-size=8192 npm run generate
+    - npm install wrangler
+    - ./node_modules/.bin/wrangler publish --name="exchanger-client-web-$CI_PROJECT_ID"
+  tags:
+    - worker-v1
+  rules:
+    - if: '$CLOUDFLARE_API_TOKEN != null && $CLOUDFLARE_ACCOUNT_ID != null && $CI_COMMIT_REF_SLUG == $DEPLOY_BRANCH_WEB'
+
+cf-setup-routes-client:
+  stage: deploy
+  image: node:20-alpine
+  script:
+    - WORKER_NAME="exchanger-client-web-$CI_PROJECT_ID" node ./cf-worker-setup.js
+  tags:
+    - worker-v1
+  rules:
+    - if: '$CLOUDFLARE_API_TOKEN != null && $CLOUDFLARE_ACCOUNT_ID != null && $CI_COMMIT_REF_SLUG == $DEPLOY_BRANCH_WEB'

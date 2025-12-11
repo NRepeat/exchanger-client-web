@@ -1,0 +1,56 @@
+
+.requisites-bg {
+
+  @include respond-to(tablet-lend) {
+    background-position-y: 0;
+  }
+
+}
+
+.requisites--top {
+
+  margin: 0 0 2.125rem;
+  display: flex;
+  justify-content: space-between;
+  //flex-wrap: wrap;
+  flex-direction: row;
+  //align-items: center;
+
+  &__btn-group {
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      @include respond-to(phone) {
+        margin-left: 1rem;
+      }
+
+
+      div {
+        button {
+          text-transform: uppercase;
+        }
+
+        &:after {
+          margin: 0px 11px;
+          content: '';
+          border-right: 1px solid #f3f3f3;
+
+          @include respond-to(tablet) {
+            border: none;
+          }
+        }
+
+        &:last-child:after {
+          border: none;
+          margin: 0px
+        }
+
+        @include respond-to(telephone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

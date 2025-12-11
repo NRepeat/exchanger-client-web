@@ -1,0 +1,64 @@
+
+.services {
+  h2{
+    font-size: 40px;
+    line-height: 46.28px;
+	color: $white2;
+
+    span{
+      color: $primary;
+      border:none;
+    }
+  }
+
+  @include respond-to(phone) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -1.5%;
+    flex-wrap: wrap;
+
+    @include respond-to(phone) {
+      margin: 0;
+    }
+  }
+
+  li {
+    @include col(3.5, 12, 320, 1, 2, 2, 1.5, 1.5);
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+
+  img {
+    padding-top: 6px;
+    width: 300px;
+    max-width: 80px;
+  }
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 1.0rem;
+    margin: auto;
+  }
+
+  p {
+    text-transform: uppercase;
+    line-height: 1.88;
+    font-size: 1rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0;
+  }
+
+  &-txt {
+    font-size: 14px;
+    line-height: 16.41px;
+    color:$dark-gray;
+    font-family: $ffRoboto_Light;
+    font-weight: 300;
+  }
+}

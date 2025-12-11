@@ -1,0 +1,394 @@
+.container-aff {
+  margin: 3rem 3.6rem;
+  display: flex;
+  flex-direction: column;
+  @include respond-to(phone) {
+    margin: 0.5rem 1rem;
+  }
+  @include respond-to(tablet-lend) {
+    margin: 1rem 2rem;
+  }
+}
+
+
+.partners-program, .requisites-main-block {
+  .container-api {
+    margin: 3.3rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    @include respond-to(phone) {
+      margin: 0.5rem 1rem;
+    }
+    @include respond-to(tablet-lend) {
+      margin: 1rem 2rem;
+    }
+
+    h2 {
+      margin-left: 0;
+      @include respond-to(phone) {
+        margin: auto;
+      }
+    }
+  }
+
+  border-top: 1px solid #f3f3f3;
+
+  &__main {
+    margin-top: 55px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    background: $white2;
+    border-radius: 12px;
+
+    .title {
+      font-size: 24px;
+      font-family: $ffPlay_Bold;
+    }
+  }
+
+  h2 {
+    margin-left: 52px;
+    @include respond-to(phone) {
+      margin-left: 0px;
+    }
+
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 13px;
+
+    @include respond-to(phone) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  li {
+    flex: 0 0 auto;
+    @include col(3.4, 12, 285, 1.875, .45, .45, .8, .9);
+    border: 1px solid #e6e6e6;
+	border-radius: 8px;
+
+	& .text-center{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+		.requisites-main--img{
+			flex: 1 1 auto;
+
+			img{ 
+				width: 100%;
+				border-radius: 4px;
+			}
+		}
+	}
+
+    @include respond-to(phone) {
+      min-width: 300px;
+    }
+
+    div > div {
+      margin-top: 1.25rem;
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        border-top: 1px dashed #CED3E6;
+
+        &:last-child {
+          border-bottom: 1px dashed #CED3E6;
+        }
+      }
+    }
+  }
+
+  .bp-dropdown__body ul {
+    margin: 0;
+
+    .element-currency-pr {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      width: 100%;
+      min-width: 100%
+
+    }
+  }
+
+  .modal-body .form-index-bloc-item label {
+    display: inline-block;
+    width: 50%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .modal-body .form-index-bloc-item input {
+    display: inline-block;
+    width: 40%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+  }
+
+
+  &-title {
+    color: #9f9f9f;
+    font-size: 15px;
+    font-family: $ffRoboto_Light;
+    margin-bottom: 1.875rem;
+    text-transform: uppercase;
+  }
+
+  &-cost {
+    font-size: 52px;
+    font-family: $ffPlay_Light;
+    margin-bottom: 1.875rem;
+
+    span {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .btn-submit {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+
+.personal-room {
+  margin-top: 3rem;
+
+  &-top {
+    &-wr {
+      background-position-y: -.5rem;
+    }
+  }
+
+  .title {
+    margin-bottom: 2.1875rem;
+  }
+}
+
+.ref-link {
+  //padding-top: 4rem;
+  //padding-bottom: 4rem;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #f3f3f3;
+
+  .container {
+    z-index: 2;
+    position: relative;
+  }
+
+  &-title {
+    margin-left: 52px;
+    @include respond-to(phone) {
+      margin-left: 0px;
+
+    }
+
+    p {
+      margin-top: 10px;
+      font-family: $ffRoboto_Light;
+      font-size: 15px;
+    }
+  }
+
+  &-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    @include respond-to(phone) {
+      align-items: center;
+    }
+
+    > div {
+      width: 42.7%;
+      margin-right: 24px;
+      @include respond-to(phone) {
+        width: 100%;
+        margin-right: 0px;
+
+      }
+    }
+
+    .current-link {
+      background-color: $primary;
+      color: #FFFFFF;
+    }
+
+  }
+
+  .title {
+    text-align: start;
+  }
+
+  input {
+    margin: 10px 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 20px 35px 15px 15px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: $light-gray;
+
+    @include respond-to(phone) {
+      font-size: 0.8rem;
+
+    }
+
+  }
+
+
+  label {
+    //width: 70%;
+    margin: auto;
+    position: relative;
+    display: block;
+
+    @include respond-to(phone) {
+      width: 100%;
+    }
+
+    span {
+      position: absolute;
+      right: 10px;
+      top: 19px;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+        @include respond-to(phone) {
+          width: 18px;
+
+        }
+      }
+    }
+  }
+
+}
+
+.statistic {
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &-ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: .94rem -1.875rem;
+
+    @include respond-to(phone) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    > li {
+      flex: 1 1;
+      @include col(5.55, 12, 320, 1.875, .45, .45, .94, .94);
+
+      &.statistic-get-li {
+        padding: 0;
+      }
+
+      @include respond-to(phone) {
+        min-width: 300px;
+      }
+    }
+  }
+
+  &-graphic {
+    border: 1px solid #e6e6e6;
+  }
+
+  b {
+    font-family: $ffMuseoSansCyrl_2;
+  }
+
+  &-get {
+
+
+    &-title {
+      background: #f4f5f7;
+      padding: 1.25rem 1.875rem;
+
+      > span, > b {
+        font-size: 1.5rem;
+      }
+
+    }
+
+    &-li {
+
+      li {
+        padding: 10px 1.25rem;
+        border-bottom: 1px solid #e6e6e6;
+        justify-content: space-between;
+
+        p {
+          font-size: 1.25rem;
+        }
+
+        img {
+          max-width: 30px;
+          margin-right: 1.25rem;
+        }
+
+        > div {
+
+          b {
+            font-size: 1.125rem;
+            margin-right: 1.875rem;
+          }
+
+          span {
+            color: #b2adad;
+            font-size: 14px;
+          }
+
+        }
+      }
+
+
+      li, li div {
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+
+    }
+  }
+
+  &-history {
+
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-size: 11px;
+      color: #9f9f9f;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+
+.form_reviews-new {
+
+  margin-top: 42px;
+  width: 100%;
+  /* -webkit-box-shadow: 0 5px 30px 0 #e3e3e4;
+  -moz-box-shadow: 0 5px 30px 0 #e3e3e4;
+  box-shadow: 0 5px 30px 0 #e3e3e4; */
+
+  .title {
+    margin-bottom: 24px;
+	color: $black!important;
+  }
+
+  &_wr {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2.4rem;
+
+    @include respond-to(telephone) {
+      padding: 0 1rem 1rem;
+    }
+
+    &::after, &::before {
+      position: absolute;
+      z-index: 0;
+      opacity: .1;
+    }
+
+    &::after {
+      content: url("~assets/img/001.svg");
+      top: -5.5rem;
+      right: -18rem;
+      width: 46rem;
+    }
+
+    &::before {
+      content: url("~assets/img/002.svg");
+      bottom: -13.3rem;
+      left: -18.5rem;
+      width: 46rem;
+    }
+  }
+
+  &_base {
+    z-index: 1;
+    position: relative;
+    max-width: 35rem;
+    margin: auto;
+  }
+
+  input, textarea {
+    margin: 10px 0 0;
+    border-radius: 20px;
+    padding: 10px 35px 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #eee;
+    width: 100%;
+    background-color: #f4f5f7;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-style: italic;
+      color: #9f9f9f;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      font-style: italic;
+      color: #9f9f9f;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      font-style: italic;
+      color: #9f9f9f;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      font-style: italic;
+      color: #9f9f9f;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    height: 4.875rem;
+    min-height: 3rem;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+  }
+
+}

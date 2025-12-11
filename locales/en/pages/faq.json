@@ -1,0 +1,13 @@
+{
+  "title": "Frequently asked Questions",
+  "all": "Everything",
+  "search": "Write your question",
+  "no_info": "No information",
+  "index_faq": "info doesn't exist",
+  "progress": {
+    "amount": "Total:",
+    "exchange_details": "Exchange details",
+    "phone": "Phone",
+    "application": "application status in progress"
+  }
+}

@@ -1,0 +1,152 @@
+.reviews {
+
+  padding-top: 4rem;
+  //margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  &-top {
+
+    //margin-top: 2.0rem;
+    //padding-bottom: 5.0rem;
+
+    &-wr {
+      background-position-y: -0.5rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 -.5rem;
+    }
+
+    li {
+      margin: .5rem;
+    }
+
+    .btn {
+      font-size: 15px;
+      @include line-height(15, 38.1);
+      text-transform: uppercase;
+    }
+
+    .btn-blue {
+      text-decoration: underline;
+    }
+
+    .btn-submit {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  &-main {
+	color: $white2;
+
+    &-list {
+
+      margin-bottom: 2.5rem;
+
+      li {
+        border: 1px solid $black3;
+		background: $white2;
+		border-radius: 12px;
+        padding: 1.25rem;
+        position: relative;
+        margin-top: 20px;
+		color: $black;
+
+        &::after {
+          content: url(~assets/img/quotes.png);
+          position: absolute;
+          z-index: 2;
+          width: 55px;
+          height: 70px;
+          right: 41px;
+          top: 0;
+        }
+      }
+
+      &-item {
+        display: flex;
+
+        @include respond-to(phone) {
+          flex-wrap: wrap;
+        }
+      }
+
+      &-person {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid $black3;
+        padding-right: 1.875rem;
+        flex-basis: 20%;
+
+        @include respond-to(phone) {
+          flex-basis: 100%;
+          padding-right: 0;
+          border-bottom: 1px solid $black3;
+          border-right: none;
+          padding-bottom: .5rem;
+          margin-bottom: .5rem;
+        }
+
+        &-photo {
+          width: 3.125rem;
+          height: 3.125rem;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          overflow: hidden;
+          padding: 7px;
+          margin-right: 1.25rem;
+          background-color: #7d9baf;
+        }
+
+        &-name {
+
+          p {
+            margin-bottom: 7px;
+          }
+
+          span {
+            color: #fac917;
+            margin-right: 3px;
+          }
+
+        }
+      }
+
+      &-txt {
+        padding-left: 1.875rem;
+        padding-right: 3.875rem;
+        flex-basis: 80%;
+
+        @include respond-to(phone) {
+          flex-basis: 100%;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        > span {
+          font-size: 12px;
+          color: #b6b6b6;
+          display: inline-block;
+          margin-bottom: 15px;
+        }
+
+        p {
+          line-height: 24px;
+        }
+      }
+
+
+    }
+
+  }
+
+
+}

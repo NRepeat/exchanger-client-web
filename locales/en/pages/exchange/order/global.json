@@ -1,0 +1,55 @@
+{
+  "status": {
+    "new": "Confirmation of the exchange",
+    "waitPayment": "Waiting for payment",
+    "inProgress": "Pending processing",
+    "inProgressPayout": "Processing",
+    "deleted": "Exchange removed",
+    "hold": "Exchange hold",
+    "done": "Exchange completed",
+    "returned": "Exchange returned"
+  },
+  "order_id": "ID:",
+  "total": "Total",
+  "time": {
+    "actual_until": "Actual until:",
+    "time_left": "Time left:"
+  },
+  "wait": {
+    "title": "To complete the exchange, you need to perform the following steps:",
+    "step": {
+      "log_in_to": "Log in to:",
+      "amount": "Amount:",
+      "to_account": "To account:",
+      "comment": "Payment comment:"
+    },
+    "btn": "I paid"
+  },
+  "order_table": {
+    "giving": "Giving",
+    "getting": "Getting"
+  },
+  "application_process_status": "Waiting for application payment.",
+  "waiting_flow_of_funds": "Waiting flow of funds for application. As soon as application will pay we automatically start processing your order.",
+  "Were_start_paying_to_you": "We're start paying to you.",
+  "we_will_transfer_money_as_soon_as_possible": "We work ahead to transfer money as soon as possible.",
+  "holdTitle": "Your order is hold.",
+  "holdDesc": "Oh sorry. Your exchange has been frozen.\nPlease contact support to get details on this situation.",
+  "errorPayoutTitle": "We're work for you asap.",
+  "errorPayoutSorry": "We have some problem with payout your order.\nWe will resolve this problem as soon as possible.",
+  "returnedTitle": "We were unable to finish your order.",
+  "returnedDesc": "We returned your money back, sorry for that. If you need details please contact to us.",
+  "doneTitle": "Order is completed.",
+  "doneDesc": "Thank you for using our service. Please leave a review about the work of our service!",
+  "deletedTitle":"Order is deleted.",
+  "deletedDesc":"If you already paid please wait when system will confirm your payment.",
+  "partner": {
+    "paymentSuccessful": "Payment was Successful",
+    "paymentProcessing": "Payment Processing",
+    "paymentHold": "Payment is hold",
+    "paymentRefunded": "Payment Refunded",
+    "paymentDeleted": "Payment Deleted",
+    "toReceive": "To receive",
+    "goBack": "Go back"
+  }
+}

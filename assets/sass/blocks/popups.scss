@@ -1,0 +1,487 @@
+
+.popup {
+  position: fixed;
+  left: 0;
+  //top: -100%;
+  height: 100%;
+  width: 100%;
+  //z-index: 11;
+  //display: flex;
+  opacity: 0;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: .35s all;
+  -moz-transition: .35s all;
+  -ms-transition: .35s all;
+  -o-transition: .35s all;
+  transition: .35s all;
+
+  z-index: 9998;
+  margin-top: 0 !important;
+  top: 0;
+  background-color: rgba(0, 0, 0, .05) !important;
+  display: table;
+
+  &-open {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .modal-header {
+    padding: 0 14px;
+  }
+
+  &-wr {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    //position: relative;
+    z-index: 10;
+    max-height: 90%;
+
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    overflow: auto;
+    margin: 0;
+
+    @include respond-to(tablet) {
+      max-width: 79%;
+    }
+
+    &-item {
+      //box-shadow: 0 25px 50px 0 rgba(23, 22, 37, 0.15);
+      width: 94%;
+      max-width: 450px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      padding-top: 32px;
+      margin: 100px auto;
+      z-index: 10;
+      position: relative;
+      background: $white2;
+      overflow: hidden;
+
+      &.kyc-modal {
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        max-width: 700px;
+      }
+
+      &--b {
+        max-width: 800px;
+      }
+
+      @include respond-to(telephone) {
+        max-width: 280px;
+      }
+
+      //@media screen and (max-width: 468px) {
+      //overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+      }
+
+      &::-webkit-scrollbar-track-piece {
+        background: rgba(0, 0, 0, 0);
+      }
+
+      &::-webkit-scrollbar-thumb:vertical {
+        height: 0px;
+        background: #272c35;
+      }
+
+      &::-webkit-scrollbar-thumb:vertical:hover {
+        background: #71CA55;
+      }
+
+      &::-webkit-scrollbar-thumb:horizontal {
+        width: 0px;
+        background: #272c35;
+      }
+
+      &::-webkit-scrollbar-thumb:horizontal:hover {
+        background: #71CA55;
+      }
+
+      //}
+    }
+
+
+    .title {
+      margin: 0;
+      padding: 1.5rem 3.0rem;
+      border-bottom: 1px solid #e6e6e6;
+      background-color: #ffffff;
+
+      @include respond-to(telephone) {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+
+  &-close {
+
+    &-bloc {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 9;
+      background-color: rgba($black2, 0.80);
+    }
+
+    &-btn {
+      position: absolute;
+      right: 13px;
+      top: -18px;
+      cursor: pointer;
+      color: $primary;
+      font-size: 28px;
+	  line-height: 16px;
+	  display: block;
+    }
+  }
+
+  form {
+
+    > div {
+      margin-bottom: 1.0rem;
+
+      @include respond-to(phone) {
+        margin-bottom: .35rem;
+      }
+    }
+  }
+
+  &-top {
+    padding: 1.5rem 14px 1rem;
+    background: #ffffff;
+
+
+    .title {
+      margin: 0 0 .5rem;
+      padding: 0 0 .5rem;
+
+    }
+
+
+    @include respond-to(telephone) {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      padding-top: .5rem;
+    }
+
+    .form-information-sent-received-wr {
+      margin: 1rem 0 2rem;
+      padding: 1.25rem 2rem;
+
+      @include respond-to(telephone) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-bottom: .5rem;
+        padding-bottom: 0;
+      }
+
+      .form-information-sent-received_img {
+        padding: 0 .93rem;
+      }
+
+      p.title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        border-bottom: none;
+
+        @include respond-to(tablet) {
+          margin: 0 auto;
+          font-size: 1.1rem;
+          justify-content: center;
+        }
+
+      }
+    }
+
+  }
+
+  input, textarea {
+    margin-top: 10px;
+    text-indent: 10px;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    border-top: 1px solid #e6e6e6;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: $ffMuseoSansCyrl_0;
+    font-weight: 100;
+    padding-right: 30px;
+    resize: none;
+    width: 100%;
+
+    background-color: #f9f9f9;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center right;
+    background-position-y: 8px;
+
+    &:focus, &:hover, &:active, &:visited {
+      border: none;
+      outline: none;
+      border-top: 1px solid #e6e6e6;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #9f9f9f;
+    }
+
+    &::-moz-placeholder {
+      color: #9f9f9f;
+    }
+
+    /* Firefox 19+ */
+    &:-moz-placeholder {
+      color: #9f9f9f;
+    }
+
+    /* Firefox 18- */
+    &:-ms-input-placeholder {
+      color: #9f9f9f;
+    }
+
+  }
+
+  textarea {
+    max-height: 4.5rem;
+  }
+
+  label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.3rem;
+
+
+    span {
+      font-size: .875rem;
+      line-height: 1.29;
+      color: #9f9f9f;
+      cursor: pointer;
+      z-index: 1;
+      position: relative;
+    }
+
+    &.popup-succes {
+
+      input {
+        //border-top-color: green;
+        //background-image: url("~assets/img/check.svg");
+      }
+    }
+
+    &.popup-error {
+
+      input {
+        //border-top-color: red;
+        //background-image: url("~assets/img/close.svg");
+      }
+    }
+
+    &.margin-b-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    margin-top: 1rem;
+    width: 100%;
+    //line-height: 3.75;
+    //font-size: 1rem;
+  }
+
+  &-registration {
+    &_passwords-bloc {
+      display: flex;
+      margin: 0 -10px;
+
+      > div {
+        flex: 1 1;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      @include respond-to(phone) {
+        flex-wrap: wrap;
+        margin: 0;
+
+        > div {
+          //min-width: 200px;
+          margin: 0 0 1rem;
+        }
+      }
+    }
+  }
+
+  &-personal-date {
+    p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.d-email {
+      margin-bottom: -14px;
+
+      label p.input-img {
+        margin-top: 0 !important;
+      }
+    }
+
+    &__col {
+      align-items: stretch;
+      margin: 0 -14px;
+      width: auto;
+
+
+      @include respond-to(phone) {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      > div {
+        p {
+          margin: 0;
+        }
+
+        padding: 0 14px;
+
+        label {
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: #a5a7a5;
+      }
+    }
+  }
+
+  .flex-start {
+
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+      max-width: 24px;
+      margin-right: 15px;
+    }
+  }
+
+  .flex-row {
+    width: auto;
+    margin: 0 -7.5px;
+
+
+    input {
+      margin: 1.875rem 7.5px 0.5rem;
+      min-width: 3rem;
+      text-align: center;
+      padding: 15px 10px;
+      text-indent: 0;
+
+      @include respond-to(big-phone) {
+        margin: 1.875rem 5px 0.5rem;
+        min-width: 2rem;
+        padding: 10px;
+      }
+    }
+
+  }
+
+}
+
+.input-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  img {
+    position: absolute;
+    left: 1.25rem;
+    width: 1.5rem;
+    margin: 0;
+    top: 0.9rem;
+  }
+
+  input {
+    padding-left: 40px;
+    margin: 0;
+  }
+}
+
+.modal-header {
+  position: relative;
+}
+
+.popup-personal-room__bot {
+  border-top: 1px solid #e6e6e6;
+  margin: 0 -14px;
+  width: auto;
+
+
+  @include respond-to(big-phone) {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  > div {
+    margin: 0 14px;
+    flex: 1 1;
+
+    .btn {
+      margin-top: 0;
+
+      @include respond-to(big-phone) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

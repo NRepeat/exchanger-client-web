@@ -1,0 +1,54 @@
+.partner-block {
+  position: relative;
+  overflow: hidden;
+  //&::after {
+  //  content: url("~assets/img/left-waves.svg");
+  //  //top: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //  top: -56%;
+  //}
+
+  .our-partner {
+    margin: 0px 0px;
+
+    .title {
+      font-size: 1.875rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      @include respond-to(phone) {
+        flex-direction: column;
+      }
+
+    }
+
+    li {
+      //align-self: center;
+      min-width: 200px;
+      padding: 10px 15px;
+      margin: 10px;
+      flex: 1 1;
+
+      a {
+        border-left: 1px solid #dedede;
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+
+    img {
+      max-width: 140px;
+      @include respond-to(phone) {
+        max-width: 240px;
+      }
+    }
+  }
+}

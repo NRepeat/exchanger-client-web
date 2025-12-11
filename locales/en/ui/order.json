@@ -1,0 +1,14 @@
+{
+  "status": {
+    "deleted": "Deleted",
+    "done": "Done",
+    "errorPayment": "Error Payment",
+    "errorPayout": "Error Payout",
+    "hold": "Hold",
+    "inProgress": "In Progress",
+    "inProgressPayout": "In Progress",
+    "new": "New",
+    "returned": "returned",
+    "waitPayment": "Wait Payment"
+  }
+}

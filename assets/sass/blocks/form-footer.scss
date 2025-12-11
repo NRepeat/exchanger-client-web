@@ -1,0 +1,48 @@
+//form for footer
+
+.form-footer {
+
+  > div {
+  }
+
+  input, textarea {
+    padding: 10px 20px;
+    background: rgba(58, 48, 99, 0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: $ffMuseoSansCyrl_0;
+
+    &::-webkit-input-placeholder {
+      font-style: italic;
+      color: #9f9f9f;
+    }
+
+    &::-moz-placeholder {
+      font-style: italic;
+      color: #9f9f9f;
+    }
+
+    /* Firefox 19+ */
+    &:-moz-placeholder {
+      font-style: italic;
+      color: #9f9f9f;
+    }
+
+    /* Firefox 18- */
+    &:-ms-input-placeholder {
+      font-style: italic;
+      color: #9f9f9f;
+    }
+  }
+
+  textarea {
+    height: 85px;
+    resize: vertical;
+    min-height: 85px;
+  }
+
+}
+
+//end form - footer
+/*================*/

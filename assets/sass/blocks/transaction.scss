@@ -1,0 +1,84 @@
+.transaction {
+
+  &__table {
+    font-size: 16px;
+
+    @include respond-to(tablet-lend) {
+      font-size: 13px;
+    }
+
+    @include respond-to(telephone) {
+      font-size: 11.5px;
+
+    }
+
+  }
+
+  &__title {
+    margin: 25px 0 20px 0;
+  }
+
+  &__row {
+
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #9b9b9b;
+
+    &--title {
+      padding: 14px 0;
+      background-color: #ebebeb;
+      color: #0595c5;
+      border: none;
+    }
+
+
+  }
+
+  &__dies {
+    @include col(1, 12, 5);
+    text-align: center;
+  }
+
+  &__plus {
+    @include col(1, 12, 5);
+    text-align: center;
+  }
+
+  &__date {
+    @include col(2.5, 12, 5);
+
+    @include respond-to(telephone) {
+      @include col(3, 12, 5);
+
+    }
+  }
+
+  &__description {
+    @include col(6, 12, 5);
+
+    @include respond-to(tablet) {
+      @include col(5.5, 12, 5);
+    }
+
+    @include respond-to(telephone) {
+      @include col(5, 12, 5);
+
+    }
+
+  }
+
+  &__amount {
+    @include col(1.5, 12, 5);
+
+    @include respond-to(tablet) {
+      @include col(2, 12, 5);
+    }
+
+    @include respond-to(telephone) {
+      @include col(2, 12, 0);
+
+    }
+
+  }
+
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Profile",
+  "requests": {
+    "title": "Exchange orders",
+    "all": "Everything",
+    "new": "New",
+    "closed": "Closed",
+    "blocked": "Blocked",
+    "currency": "Currency",
+    "wallet": "Purse",
+    "status": "Status",
+    "date": "date",
+    "action": "Act",
+    "operation": "Operation"
+  },
+  "affiliate": "Affiliate program",
+  "api": "REST-API",
+  "edit": "Change",
+  "save": "Save",
+  "passport": "Passport details",
+  "name": "Name",
+  "serial": "Serial number",
+  "when": "When issued",
+  "who": "Who issued",
+  "email": "E-mail",
+  "password": "Change password",
+  "contact": "Contact details",
+  "old": "Old Password",
+  "new": "New password",
+  "log": {
+    "title1": "Login to your account",
+    "title2": "Password recovery",
+    "email": "Enter email",
+    "reg": "Sign up",
+    "password": "Password",
+    "forget": "Forgot your password?",
+    "submit1": "To come in",
+    "submit2": "Restore",
+    "social": "Login with:"
+  },
+  "reg": {
+    "title": "Sign up",
+    "name": "Your name",
+    "email": "Email",
+    "password": "Password",
+    "repeat": "Confirm password",
+    "rules": "By clicking on the “Register” button I agree to the processing of personal data",
+    "submit": "To register",
+    "social": "Login through"
+  },
+  "reset": {
+    "title": "Password reset",
+    "password": "Create a password",
+    "repeat": "Confirm password",
+    "submit": "Reset"
+  },
+  "protection": {
+    "account_protection": "Account Protection",
+    "two_factor": "Add two factor protection",
+    "notifications": "Notifications",
+    "reset_2_factor": "Reset two factor protection",
+    "current_password": "Current password",
+    "receive_notification": "Receive notification of my status change",
+    "get_logged": "Get logged in to my account",
+    "block_my_account": "Block my account",
+    "delete_my_account": "Delete my account"
+  },
+  "requisites": {
+    "title": "Requisites",
+    "electronic_currency": "Electronic_currency",
+    "crypto_currency": "Cryptocurrency",
+    "bank_accounts": "Bank accounts",
+    "you_none": "you have none",
+    "yandex_money": "Yandex money props",
+    "add_wallet": "Add wallet",
+    "verified_wallet": "Wallet is verified",
+    "currency": "Currency",
+    "wallet": "Wallet",
+    "save": "Save"
+  }
+}

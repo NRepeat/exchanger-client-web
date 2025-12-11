@@ -1,0 +1,252 @@
+@use "sass:math";
+%container {
+  width: $wide;
+  margin: 0 auto;
+
+  @include respond-to(phone) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include respond-to(tablet-lend) {
+    width: $large;
+  }
+
+  @include respond-to(tablet) {
+    width: $small;
+  }
+
+  @include respond-to(phone) {
+    width: 100%;
+    max-width: $phone;
+  }
+}
+
+%container-padding {
+  padding: 0 15px;
+
+  @include respond-to(phone) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+%reset_link {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+@function strip-units($number) {
+  @return math.div($number, ($number * 0 + 1));
+}
+
+%clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #1F2630;
+  font-family: $ffRoboto_Regular;
+  font-size: 14px;
+  color: $dark;
+
+  display: flex;
+  flex-direction: column;
+
+
+
+  @include respond-to(tablet) {
+    font-size: 14px;
+  }
+
+  @include respond-to(phone) {
+    font-size: 12px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-family: $ffRoboto_Medium;
+  font-weight: 500;
+}
+
+a, label, span, h2 {
+  font-family: $ffRoboto_Regular;
+  font-weight: 400;
+}
+
+//.container-footer {
+//  width: 1200px !important;
+//  margin: 0 auto;
+//  padding: 0 15px;
+//}
+
+.container {
+  width: 100%;
+  max-width: $wide;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include respond-to(tablet-lend) {
+    max-width: 970px;
+  }
+
+  @include respond-to(tablet) {
+    max-width: 720px;
+  }
+
+  @include respond-to(phone) {
+    flex-wrap: wrap;
+    max-width: 620px;
+  }
+
+  @include respond-to(big-phone) {
+    max-width: 520px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  @include respond-to(telephone) {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+
+  }
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, a {
+
+  @media only screen and (min-width: 813px) {
+
+    -webkit-transition: .35s;
+    -moz-transition: .35s;
+    -ms-transition: .35s;
+    -o-transition: .35s;
+    transition: .35s;
+
+    &:after, &:before {
+      -webkit-transition: .35s;
+      -moz-transition: .35s;
+      -ms-transition: .35s;
+      -o-transition: .35s;
+      transition: .35s;
+    }
+
+  }
+
+}
+
+p, h2, h3, ul, h1, button, div, a, li {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+h3 {
+  font-size: 16px;
+  color: $white2;
+
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  color: $white2;
+  font-family: $ffPlay_Light;
+  font-weight: 400;
+  @include respond-to(phone){
+    text-align: center;
+  }
+}
+
+p {
+  //color: $default-text;
+  font-weight: 400;
+  line-height: 16.41px;
+  font-family: $ffRoboto_Regular;
+}
+
+.title {
+  font-size: 36px;
+  text-transform: initial;
+  font-weight: 400;
+  font-family: $ffPlay_Light;
+
+  @include respond-to(phone) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+b {
+  font-family: $ffPlay_Bold;
+  font-weight: 700;
+}
+
+select, input, textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+
+  &:active, &:focus, &:visited {
+    border: none;
+    outline: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+    /* span{
+      font-family: $ffPlay_Light;
+    } */
+  p {
+    b {
+      color: $white2;
+      font-size: 18px;
+      line-height: 25.45px;
+    }
+  }
+}
+
+.dn-mob {
+  @include respond-to(phone) {
+    display: none;
+  }
+}

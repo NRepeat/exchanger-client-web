@@ -1,0 +1,223 @@
+
+.user-bloc {
+
+  max-width: 270px;
+  width: 100%;
+  position: relative;
+
+  @include respond-to(phone) {
+    max-width: 200px;
+  }
+
+  .caret {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 12px;
+      width: 0;
+      height: 0;
+      border: 5px solid #65557e;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+
+      -webkit-transition: .35s all;
+      -moz-transition: .35s all;
+      -ms-transition: .35s all;
+      -o-transition: .35s all;
+      transition: .35s all;
+    }
+  }
+
+  .caret-open {
+    &::before {
+      top: 5px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+
+      -webkit-transition: .35s all;
+      -moz-transition: .35s all;
+      -ms-transition: .35s all;
+      -o-transition: .35s all;
+      transition: .35s all;
+    }
+  }
+
+  &-date {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      margin-right: 20px;
+      background: $primary;
+      font-size: 15px;
+      line-height: 18px;
+	  color: $white2;
+
+      @include respond-to(phone) {
+        width: 40px;
+        height: 40px;
+      }
+
+      z-index: 1;
+
+      //&-item {
+      //  pointer-events: none;
+      //  height: 44px;
+      //  //padding: 6.5px;
+      //  //margin: 3px;
+      //  position: absolute;
+      //  top: 50%;
+      //  //-webkit-border-radius: 50%;
+      //  //-moz-border-radius: 50%;
+      //  //border-radius: 50%;
+      //}
+
+    }
+
+    &-info {
+		color: $white2;
+
+		@include respond-to(phone) {
+			display: none;
+		}
+
+      p {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+
+      span {
+        color: #6e6d73;
+        font-size: 15px;
+      }
+
+    }
+  }
+
+  ul {
+    background: #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px 0 rgba(23, 22, 37, 0.15);
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: -110%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+
+    -webkit-transition: .35s all;
+    -moz-transition: .35s all;
+    -ms-transition: .35s all;
+    -o-transition: .35s all;
+    transition: .35s all;
+
+    &:after {
+      content: '';
+      position: absolute; /* Абсолютное позиционирование */
+      right: 20px;
+      top: -20px; /* Положение треугольника */
+      border: 10px solid transparent; /* Прозрачные границы */
+      border-bottom: 10px solid #ffffff; /* Добавляем треугольник */
+    }
+  }
+
+  .user-bloc-list-open {
+    opacity: 1;
+    visibility: visible;
+    top: calc(100% + 16px);
+    z-index: 11;
+    min-width: 270px;
+
+    @include respond-to(phone) {
+      min-width: 200px;
+    }
+
+  }
+
+  li {
+    overflow: hidden;
+
+    &:first-child {
+      a {
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    a {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      @include respond-to(phone) {
+        padding: 10px;
+        font-size: 13px;
+
+      }
+
+      &:hover {
+        background: #f4f5f7;
+        -webkit-transition: .35s all;
+        -moz-transition: .35s all;
+        -ms-transition: .35s all;
+        -o-transition: .35s all;
+        transition: .35s all;
+
+        img {
+          opacity: 1;
+          -webkit-transition: .35s all;
+          -moz-transition: .35s all;
+          -ms-transition: .35s all;
+          -o-transition: .35s all;
+          transition: .35s all;
+        }
+      }
+    }
+
+    img {
+      max-width: 24px;
+      width: 100%;
+      margin-right: 15px;
+      opacity: .5;
+      @include respond-to(phone) {
+        max-width: 25px;
+
+      }
+    }
+  }
+}

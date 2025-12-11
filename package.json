@@ -1,0 +1,49 @@
+{
+  "name": "exchanger",
+  "version": "1.0.0",
+  "description": "exchanger",
+  "author": "boxexchnger",
+  "private": true,
+  "scripts": {
+    "configure": "node ./script-configure.js",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate --quiet",
+    "generate-debug": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@bchteam/vue-jivosite": "^1.0.0",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "bignumber.js": "^9.1.1",
+    "cookie-universal-nuxt": "^2.2.2",
+    "moment": "^2.29.4",
+    "nconf": "^0.12.0",
+    "nuxt": "^2.17.2",
+    "nuxt-clipboard2": "^0.2.1",
+    "nuxt-dropzone": "^1.0.4",
+    "nuxt-seo": "1.6.1",
+    "nuxt-validate": "^1.0.1",
+    "qrcode.vue": "^1.7.0",
+    "v-runtime-template": "^1.10.0",
+    "vue": "^2.7.15",
+    "vue-events": "^3.1.0",
+    "vue-recaptcha": "^1.3.0",
+    "vue-select": "^3.20.2",
+    "vue-sweetalert2": "^5.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "bluebird": "^3.7.2",
+    "sass": "^1.63.3",
+    "sass-loader": "^10.4.1"
+  }
+}

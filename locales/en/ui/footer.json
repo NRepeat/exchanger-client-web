@@ -1,0 +1,17 @@
+{
+  "dev_by": "Developed by",
+  "box_exchanger": "BoxExchanger",
+  "about": "About Us",
+  "rules": "Rules",
+  "contacts": "Contacts",
+  "time": "Mon-Fri from 9:00 to 23:00 (GMT+02:00) Sat-Sun flexible schedule, check the operator's status.",
+  "support": {
+    "title": "Feedback",
+    "online": "Online Center",
+    "advice": "Write your question",
+    "name": "Enter your email",
+    "message": "Message",
+    "submit": "Send"
+
+  }
+}

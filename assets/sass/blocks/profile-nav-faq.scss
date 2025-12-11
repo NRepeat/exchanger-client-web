@@ -1,0 +1,258 @@
+
+.faq-top {
+  margin-top: 2.5rem;
+  //margin-bottom: 6rem;
+
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 9px;
+    @include respond-to(tablet) {
+      justify-content: space-between;
+    }
+  }
+
+  li {
+    //align-content: center;
+    padding: .43rem;
+    margin: .43rem;
+
+    &:after {
+      margin: 0px 28px;
+      content: '';
+      border-right: 1px solid #f3f3f3;
+
+      @include respond-to(tablet) {
+        border: none;
+      }
+    }
+
+    &:last-child:after {
+      border: none;
+      margin: 0px
+    }
+
+    @include respond-to(tablet) {
+      width: 40%;
+    }
+
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    font-family: $ffRoboto_Regular;
+    font-size: 15px;
+    color: $dark;
+
+    img{
+      flex: 0 0 auto;
+    }
+
+    &:hover, &.profile-nav-active {
+      color: $primary;
+      font-family: $ffRoboto_Medium;
+
+    }
+  }
+
+  img {
+    max-width: 21px;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+}
+
+.faq-top {
+
+  ul {
+    margin: 0 -.94rem;
+  }
+
+  li {
+    flex: 1 1;
+    @include col(3.0, 12, 250, 0, .45, .45, .0, .94);
+  }
+
+  img {
+    max-width: 27px;
+  }
+
+  .form-faq-search {
+    position: relative;
+    margin-top: 1.25rem;
+
+    input[type="search"] {
+      border: 1px solid $primary;
+      width: 100%;
+      padding: 10px 35px 10px 55px;
+      font-size: 1rem;
+      margin: 10px 0;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      line-height: 1.3;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+
+      &::-moz-placeholder { /* Firefox 19+ */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+
+      &:-ms-input-placeholder { /* IE 10+ */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+    }
+
+    input[type="submit"] {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+      left: 1.25rem;
+      top: 20px;
+      background-color: transparent;
+      background-image: url("~assets/img/search.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.profile-nav {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 9px;
+    @include respond-to(tablet) {
+      justify-content: space-between;
+    }
+  }
+
+  li {
+    padding: .43rem;
+    margin: .43rem;
+
+    &:after {
+      margin: 0px 28px;
+      content: '';
+      border-right: 1px solid #f3f3f3;
+
+      @include respond-to(tablet) {
+        border: none;
+      }
+    }
+
+    &:last-child:after {
+      border: none;
+      margin: 0px
+    }
+
+    @include respond-to(tablet) {
+      width: 40%;
+    }
+
+  }
+
+  a {
+    //display: flex;
+    //align-items: center;
+    font-family: $ffRoboto_Regular;
+    font-size: 15px;
+    color: $dark;
+
+    &:hover, &.profile-nav-active {
+      color: $primary;
+      font-family: $ffRoboto_Medium;
+
+    }
+  }
+
+  img {
+    max-width: 21px;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+}
+
+.faq-top {
+
+  ul {
+    margin: 0 -.94rem;
+  }
+
+  li {
+    flex: 1 1;
+    @include col(3.0, 12, 250, 0, .45, .45, .0, .94);
+  }
+
+  img {
+    max-width: 27px;
+  }
+
+  .form-faq-search {
+    position: relative;
+    margin-top: 1.25rem;
+
+    input[type="search"] {
+      border: 1px solid $primary;
+      width: 100%;
+      padding: 10px 35px 10px 55px;
+      font-size: 1rem;
+      margin: 10px 0;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      line-height: 1.3;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+
+      &::-moz-placeholder { /* Firefox 19+ */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+
+      &:-ms-input-placeholder { /* IE 10+ */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        font-style: italic;
+        color: #9f9f9f;
+      }
+    }
+
+    input[type="submit"] {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+      left: 1.25rem;
+      top: 20px;
+      background-color: transparent;
+      background-image: url("~assets/img/search.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+  }
+}

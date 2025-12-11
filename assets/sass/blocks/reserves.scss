@@ -1,0 +1,53 @@
+/*
+.reserves {
+  background: #f4f5f7;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  &::after, &::before {
+    position: absolute;
+    z-index: 0;
+    opacity: .1;
+  }
+
+
+  div {
+    position: relative;
+    z-index: 1;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -1.875rem;
+  }
+
+  li {
+
+    @include col(3.6,12,1.7);
+
+    background: #ffffff;
+    padding: 1.7rem;
+    margin: 0.45rem .94rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}*/

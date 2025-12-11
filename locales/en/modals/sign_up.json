@@ -1,0 +1,13 @@
+{
+  "sign_up": "Sign Up",
+  "your_name": "First name",
+  "your_surname": "Last name",
+  "name": "First name",
+  "surname": "Last name",
+  "email": "Email",
+  "password": "Password",
+  "repeat": "Repeat password",
+  "rules": "By clicking on the “Sign Up” button I agree to the processing of personal data",
+  "submit": "Sign Up",
+  "social": "Sign with"
+}

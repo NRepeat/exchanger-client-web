@@ -1,0 +1,43 @@
+
+.under-header {
+
+  //background-image: url("~assets/img/bg.svg");
+  //background-size: cover;
+  //background-position-x: center;
+  //background-position-y: -6.5rem;
+  //background-repeat: no-repeat;
+
+
+  @include respond-to(telephone) {
+    background-position-y: 0;
+  }
+
+}
+
+.form-index-top-wr {
+
+  //@include respond-to(phone) {
+  //  background-color: #f4f5f7;
+  //}
+}
+
+/* .left-bg {
+  background-image: url("~assets/img/bg-t.svg");
+  background-repeat: no-repeat;
+  //background-size: contain;
+  padding-bottom: 5rem;
+  background-size: 620px;
+}
+
+.right-bg {
+  background-image: url("~assets/img/bg-t-2.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 620px;
+} */
+
+@include respond-to(tablet) {
+  .right-bg, .left-bg {
+    background-image: none;
+  }
+}

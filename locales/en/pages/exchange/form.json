@@ -1,0 +1,23 @@
+{
+  "from": {
+    "title": "Give away",
+    "choose": "Choose a currency",
+    "currency": "Currency"
+  },
+  "to": {
+    "title": "Take",
+    "choose": "Choose a currency",
+    "currency": "Currency",
+    "reserve": "Reserve:",
+    "rate": "Exchange rate:"
+  },
+  "details": {
+    "choose": "Fill in",
+    "title": "Exchange details",
+    "advice": "Read carefully",
+    "pocket_from": "With Wallet",
+    "pocket_to": "In wallet",
+    "rules": "By clicking this button, I agree with the rules.",
+    "submit": "Exchange"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "title": "Partners",
+  "toUsers": {
+    "slogan": "save and earn",
+    "title": "Referral program for users",
+    "content": "Want to make money with us? Register with us on the site and you will be able to participate in our referral program and cumulative system of discounts! After registration, you automatically receive a cumulative discount for the exchange - 5%.",
+    "button": "Read more"
+  },
+  "toPartners": {
+    "slogan": "earn",
+    "title": "For monitoring",
+    "content": "We invite to cooperation monitoring exchangers. We are very pleased with new partners and are ready to share profits. Register with us on the site and you will receive a special referral link.",
+    "button": "Read more"
+  },
+  "toShops": {
+    "slogan": "accept payments and earn",
+    "title": "Acceptance of payments for your site",
+    "content": "Do you have your own online store, landing page, or do you sell any product or service, but you are not able to accept payment? With us you can accept payments from different banks and payment systems at favorable rates for your customers!",
+    "button": "Read more"
+  },
+  "partner_system": {
+    "title": "Affiliate program",
+    "available": "Available",
+    "withdraw": "Withdraw money",
+    "auto_out": "Auto output",
+    "more": "more",
+    "change_rate": "Change rate",
+    "my_rate": "my rate",
+    "of_the_amount": "of the amount",
+    "total_received": "Total received",
+    "operations": "Operations",
+    "conversions": "Conversions",
+    "referrals": "Referrals",
+    "referral_title": "Referral link and export courses",
+    "referral_description": "You can participate in our affiliate program. Use the personal link below.",
+    "referral_link": "Your partner link",
+    "export_rates_txt": "Export courses TXT",
+    "export_rates_json": "Export courses JSON",
+    "export_rates_xml": "Export courses XML",
+    "partner_rewards": "Partner rewards",
+    "profit": "Profit",
+    "change": "Change",
+    "from_profits": "from profits"
+  },
+  "system": {
+    "technical_partner": "Technical implementation of the affiliate program",
+    "user_guide": "The user goes to the exchange office via the link of the partner indicated above; When clicking on a link, the exchange office sets cookies to preserve the user's identity with a particular partner; When creating an exchange request, the code of the partner is taken from cookies and the amount of remuneration for the partner is calculated; Upon successful completion of the exchange, the amount of remuneration is charged to the account in the partner's account; Partner account contains statistics of charges, history of visits, for more comfortable and productive work.",
+    "affiliate_program": "Affiliate program",
+    "available_withdraw": "Available for withdrawal",
+    "withdraw_funds": "Withdraw funds",
+    "history": "History withdraw",
+    "my_bet": "my bet",
+    "from_the": "from the sum",
+    "from_profit": "from profits",
+    "change_bid": "Change bid",
+    "more": "more",
+    "total_received": "Total received",
+    "operations": "Operations.",
+    "transitions": "Transitions",
+    "referrals": "Referrals",
+    "referral_link": "Referral link and export rates",
+    "you_can_text": "You can participate in our affiliate program. Use the personal link below.",
+    "your_affiliate_link": "Your affiliate link",
+    "export_txt": "Export courses TXT",
+    "export_json": "Export courses JSON",
+    "export_xml": "Export courses XML",
+    "affiliate_rewards": "Affiliate rewards",
+    "profit": "Profit",
+    "exchange": "Exchange",
+    "change_rate":"Change rate"
+  }
+
+}

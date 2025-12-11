@@ -1,0 +1,41 @@
+
+.contact-main-form {
+
+  padding: 2.8rem 4rem 2.2rem;
+
+  @include respond-to(tablet-lend) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include respond-to(phone) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: .875rem;
+  }
+
+  input, textarea {
+    margin: 10px 0 0;
+    border-radius: 20px;
+    padding: 10px 35px 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #eee;
+    width: 100%;
+    background-color: #f4f5f7;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 5rem;
+    min-height: 2.5rem;
+  }
+
+  > div {
+    margin-top: 1.625rem;
+  }
+
+}

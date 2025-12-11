@@ -1,0 +1,132 @@
+
+.zayvki-filter {
+  margin-left: 52px;
+
+  @include respond-to(tablet) {
+    margin-left: 0
+  }
+
+  .title {
+    font-family: $ffPlay_Bold;
+  }
+
+
+  &--top {
+    display: flex;
+    margin-right: 50px;
+    justify-content: space-between;
+    //flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+    &__btn-group {
+      //.btn {
+      //  line-height: 2.72727;
+      //  font-size: 14px;
+      //  margin: 10px 0 10px 5px;
+      //}
+      @include respond-to(tablet) {
+        margin-left: 1rem;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          text-transform: uppercase;
+
+          &:after {
+            margin: 0px 11px;
+            content: '';
+            border-right: 1px solid #f3f3f3;
+
+            @include respond-to(tablet) {
+              border: none;
+            }
+          }
+
+          &:last-child:after {
+            border: none;
+            margin: 0px
+          }
+
+          @include respond-to(telephone) {
+            width: 45%;
+            margin: 0px 4px;
+          }
+        }
+      }
+    }
+  }
+
+  &--bot {
+    margin: 0 -30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @include respond-to(phone) {
+      margin: 0 10px;
+    }
+  }
+}
+
+
+.zayvki-filter-main {
+  margin: 2.5rem 0 .5rem;
+
+  &--top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    //align-items: center;
+
+    &__btn-group {
+      //.btn {
+      //  line-height: 2.72727;
+      //  font-size: 14px;
+      //  margin: 10px 0 10px 5px;
+      //}
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          text-transform: uppercase;
+
+          &:after {
+            margin: 0px 11px;
+            content: '';
+            border-right: 1px solid #f3f3f3;
+
+            @include respond-to(tablet) {
+              border: none;
+            }
+          }
+
+          &:last-child:after {
+            border: none;
+            margin: 0px
+          }
+
+          @include respond-to(telephone) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &--bot {
+    margin: 0 -30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @include respond-to(phone) {
+      margin: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "News",
+  "all": "See all",
+  "news-not-found": "No news",
+  "category": "Category",
+  "your_name": "Your name",
+  "news": {
+    "back": "Back to news",
+    "comment": "Comment",
+    "put_comment": "Leave your comment",
+    "put_comment_2": "Leave a comment",
+    "no_comments": "No comments",
+    "text_review": "Enter review text"
+  }
+}

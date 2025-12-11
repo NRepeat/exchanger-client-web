@@ -1,0 +1,52 @@
+.footer {
+  .container-1{
+     width: 1450px;
+  }
+  flex: 0 0 auto;
+
+  &-bottom {
+    background: $black2; //radial-gradient(138.47% 87.35% at 50.69% 25.61%, #F3F6F8 0%, #FFFFFF 100%);    
+	padding-top: 10px;
+    padding-bottom: 10px;
+	color: $white2;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    p, a {
+      color: $dark-gray;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    ul {
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    li {
+      margin: 10px 10px;
+    }
+
+    a {
+
+      font-size: 1em;
+      //padding: 5px;
+
+      &:hover {
+        color: $white2;
+      }
+    }
+
+  }
+}

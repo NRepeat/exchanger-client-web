@@ -1,0 +1,89 @@
+
+.popup-bottom {
+
+  padding: .7rem 1.43rem 1rem;
+  background: #f4f5f7;
+
+  &__ {
+    //padding: .7rem 3.43rem 1rem;
+    padding: .7rem 14px 1rem;
+
+    @include respond-to(big-phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    > p, > ul {
+      flex: 1 1;
+      white-space: normal;
+      line-height: normal;
+    }
+
+    > ul {
+      @include respond-to(big-phone) {
+        margin-top: 15px !important;
+      }
+    }
+
+    > p {
+      img {
+        margin-right: 20px;
+        max-width: 70px;
+        width: 100%;
+
+        @include respond-to(big-phone) {
+          max-width: 40px;
+        }
+      }
+    }
+
+  }
+
+  &-title {
+    font-size: 18px;
+    line-height: 1.82;
+    white-space: nowrap;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  li {
+    margin: 5px;
+
+    @include respond-to(tablet) {
+      margin: 0;
+    }
+  }
+
+  a {
+    margin: 5px;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @include respond-to(telephone) {
+      display: inline-block;
+      width: 35px;
+    }
+  }
+
+  img {
+    max-width: 40px;
+    width: 100%;
+  }
+
+  &.d-flex {
+    @include respond-to(telephone) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+}

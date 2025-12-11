@@ -1,0 +1,13 @@
+{
+  "title": "news",
+  "all": "See all",
+  "category": "Category",
+  "news": {
+    "back": "Back to news",
+    "comment": "Comment",
+    "put_comment": "Leave your comment",
+    "put_comment_2": "Leave a comment",
+    "no_comments": "no comments",
+    "text_review": "Enter review text"
+  }
+}

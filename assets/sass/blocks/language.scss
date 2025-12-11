@@ -1,0 +1,14 @@
+
+.languages {
+  a {
+    text-transform: uppercase;
+    font-family: $ffMuseoSansCyrl_2;
+
+    &:hover {
+      color: #18829c;
+    }
+    &.active-lang-link{
+      color: #1ac1de;
+    }
+  }
+}

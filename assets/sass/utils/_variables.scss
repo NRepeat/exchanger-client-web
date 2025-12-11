@@ -1,0 +1,129 @@
+// Контрольные точки;
+$breakpointsPhone: 370px;
+$breakpointsPhoneWide: 480px;
+$breakpointsPhablet: 540px;
+$breakpointsTabletSmall: 640px;
+$breakpointsTablet: 768px;
+$breakpointsTabletWide: 992px;
+$breakpointsDesktop: 1200px;
+$breakpointsDesktopWideMd: 1450px;
+$breakpointsDesktopWide: 1600px;
+
+$xlg: $breakpointsDesktopWide;
+$lg: $breakpointsDesktopWideMd;
+$md: $breakpointsDesktop;
+$sm: $breakpointsTabletWide;
+$xs: $breakpointsTabletSmall;
+$xxs: $breakpointsPhone;
+
+$breakpoints: (
+	"phone": $breakpointsPhone,
+	"phone-wide": $breakpointsPhoneWide,
+	"phablet": $breakpointsPhablet,
+	"tablet-small": $breakpointsTabletSmall,
+	"tablet": $breakpointsTablet,
+	"tablet-wide": $breakpointsTabletWide,
+	"desktop": $breakpointsDesktop,
+	"desktop-wide-md": $breakpointsDesktopWideMd,
+	"desktop-wide": $breakpointsDesktopWide,
+);
+
+$enable-grid-classes: true !default;
+
+$grid-breakpoints: (
+	xxxs: 0,
+	xl: $xlg,
+	lg: $lg,
+	md: $md,
+	sm: $sm,
+	xs: $xs,
+	xxs: $xxs,
+) !default;
+// Grids
+$grid-columns: 12;
+$grid-gutter-width: 54px;
+$baseFontF: 'Play', sans-serif;
+$headlineFontF: 'Play', sans-serif;
+
+$white: #D1D1D1;
+$white2: #FFF;
+$black: #000;
+$black2: #1F2630;
+$black3: #222a35;
+
+$text-default: #6b7884;
+$text-body: #4e5155;
+$text-heading: #1d1d26;
+$blue: #2DC100;
+$green: #2DC100;
+
+$red: #ff7373;
+$gray2: #b9b9b9;
+
+$titleFF: $headlineFontF;
+$inter: $titleFF;
+
+$baseFS: 16px !default;
+$baseLH: 1.3;
+$baseFW: 500;
+$baseFSt: normal;
+$baseFF: $baseFontF;
+$baseFClr: $black;
+$baseBg: #F4F6FC;
+
+$family: $baseFF;
+
+$containerW: 1326px;
+$containerP: 15px;
+
+$baseLinkColor: inherit;
+$baseLinkColorHover: inherit;
+
+// Media width
+$phone: 320px;
+$min-tablet: 380px;
+$telephone: 550px;
+$big-phone: 650px;
+$small: 767px;
+$large: 1025px;
+$wide: 1200px;
+$wide_: 1200px;
+
+
+//Fonts
+$ffMuseoSansCyrl_0: 'Play', sans-serif;
+$ffMuseoSansCyrl_2: 'Play', sans-serif;
+$ffBoldMuseoSansCyrl_3: 'Play', sans-serif;
+$ffRoman: 'Play', sans-serif;
+$ffPlay_Light: 'Play', sans-serif;
+$ffPlay_Bold: 'Play', sans-serif;
+$ffRoboto_Light: 'Play', sans-serif;
+$ffRoboto_Medium: 'Play', sans-serif;
+$ffRoboto_Regular: 'Play', sans-serif;
+
+
+//Colors
+
+$menuLinks: #6e6d73;
+$colorBody: #212121;
+
+$colBgElement: #b63bc7;
+
+//Background
+$bacMenu: #131722;
+$bacTxt: #f4f5f7;
+
+
+$primary:#2DC100;
+$primary-h: #249602;
+$gray:#72819F;
+$dark:#282E38;
+$light-gray:#F3F6F8;
+$light-blue:#F7FAFC;
+$gray-blue:#D0D2DB;
+$dark-gray: #96989c;
+$default-text:#50535A;
+$velvet-blue: #e6e9f5;
+
+
+$border-order:1px solid #F0F1F6

@@ -1,0 +1,21 @@
+{
+  "get_money": "Withdraw funds",
+  "no_routes": "There are no available directions for withdraw, please contact support to withdraw funds.",
+  "amountInUsd": "Amount (in USD)",
+  "youWillGet": "You will receive:",
+  "withdraw": "Withdraw",
+  "replenish": "Deposit",
+
+  "balance": "Balance",
+  "deposit": "Deposit",
+  "selectNetwork": "Select method",
+  "sendOnly": "Send Only",
+  "sendOnly2": "to this deposit address. Sending any other coin or token to this address may result in the loss of your deposit.",
+  "address": "Address",
+  "tag": "Tag",
+  "receive": "Receive",
+  "giveUp": "Give Up",
+  "sum": "Sum",
+  "select": "Select",
+  "limit": "Limit"
+}

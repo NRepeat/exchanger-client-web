@@ -1,0 +1,19 @@
+.done-banner-block {
+	margin-top: 24px;
+
+	&__text {
+		border: 1px solid $gray2;
+		border-radius: 5px;
+		padding: 16px;
+
+		p {
+			margin-bottom: 16px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		a{ color: $primary; text-decoration: underline;}
+	}
+}

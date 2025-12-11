@@ -1,0 +1,211 @@
+
+.form {
+  &-manual {
+
+    .form-information-sent-received-wr {
+      padding: 1.0rem .94rem;
+      margin-bottom: 0;
+    }
+
+    .form-information-sent-received_info {
+      .title {
+        span {
+          font-size: 1.55rem;
+
+          @include respond-to(phone) {
+            margin-left: 10px;
+          }
+
+        }
+      }
+    }
+
+    .form-information-sent-received_img {
+      img {
+        max-width: 70px;
+      }
+    }
+
+    .form-information_contact {
+
+      justify-content: center;
+      margin-bottom: 0rem;
+
+      .contact {
+        margin: .88rem 2.4rem;
+
+        @include respond-to(phone) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      ul {
+        margin: 0;
+      }
+
+    }
+
+    &-must {
+
+      .title {
+        font-size: 22px;
+        color: $dark;
+        font-family: $ffPlay_Bold;
+        line-height: 27.77px;
+        @media screen and (max-width: 460px) {
+          font-size: 16px;
+        }
+      }
+
+      ul {
+        margin: 58px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        //
+        //@include respond-to(tablet-lend) {
+        //  display: block;
+        //}
+
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px 34px 0px;
+        align-items: center;
+
+        &:last-child {
+          padding: 0;
+        }
+
+        p {
+          white-space: nowrap;
+          padding-right: 12px;
+        }
+
+        .value-manual-payment {
+          display: flex;
+          align-items: center;
+          color: $dark;
+
+          word-break: break-all;
+
+          img {
+            padding-left: 12px;
+            cursor: pointer;
+          }
+
+        }
+
+        //margin:  2.0em 0.875rem 0.875rem;
+        //margin:  0.875rem;
+        //padding: 1rem .94rem;
+
+        //flex: 1 1;
+
+
+        div {
+          //display: flex;
+          //align-items: center;
+          //justify-content: space-between;
+
+          @include respond-to(telephone) {
+            flex-wrap: wrap;
+          }
+
+          p {
+            white-space: nowrap;
+            margin-right: 12px;
+            line-height: 1.95;
+
+            @include respond-to(telephone) {
+              white-space: normal;
+              line-height: normal;
+              margin: 6px 6px 6px 0;
+              text-align: left;
+            }
+          }
+        }
+
+
+      }
+
+      .btn {
+        //margin-top: 10px;
+
+        img {
+          margin: 0 6px 0 0;
+        }
+      }
+
+      &_txt {
+        font-size: 1.0rem;
+        //margin-top: 1.3rem;
+
+
+        @media screen and (max-width: 460px) {
+          font-size: .75rem;
+        }
+      }
+
+    }
+
+    .btn-plain {
+
+      position: absolute;
+      right: 0;
+      margin-top: .5rem;
+
+
+      @include respond-to(phone) {
+        position: relative;
+        margin-top: 1.5rem;
+      }
+
+    }
+
+  }
+}
+
+.form-manual-wait {
+  .merchant-qrcode {
+    margin-top: 30px;
+    margin-bottom: -15px;
+  }
+
+  .form-manual-must {
+    ol {
+      padding-top: 26px;
+
+      li {
+        display: block;
+        text-align: left !important;
+        padding: 0;
+
+        div {
+          position: relative;
+          margin: 0 0 20px;
+        }
+
+        p {
+          margin-bottom: 9px;
+          line-height: 16.41px;
+        }
+      }
+    }
+
+    .form-manual-must_txt {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      width: 100%;
+      padding: 14px 18px;
+      height: 48px;
+      color: #000000;
+      background: #F3F6F8;
+      border-radius: 8px;
+    }
+  }
+}

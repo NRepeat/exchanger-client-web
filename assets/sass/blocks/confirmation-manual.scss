@@ -1,0 +1,71 @@
+
+.form {
+
+  &-confirmation-manual-bloc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: .8em;
+
+
+    @include respond-to(tablet-lend) {
+      > div {
+        flex-grow: 1;
+        justify-content: space-between;
+      }
+    }
+
+  }
+
+  &-confirmation-manual-number {
+
+    > p {
+      color: #ffffff;
+      font-size: 1.5em;
+      margin-top: .5rem;
+    }
+  }
+
+  &-confirmation-manual-overtime {
+    padding: 0 30px;
+
+    @include respond-to(telephone) {
+      padding: 0 5px;
+    }
+
+    img {
+      max-width: 88px;
+      width: 100%;
+    }
+
+  }
+
+  &-confirmation-manual-actual {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    @include respond-to(tablet-lend) {
+      margin-top: .5rem;
+    }
+
+    &-info {
+      p {
+        font-size: 15px;
+        color: #ffffff;
+        line-height: 1.3;
+
+        @include respond-to(telephone) {
+          font-size: 12px;
+        }
+
+        b {
+          font-size: 2.68rem;
+        }
+      }
+    }
+  }
+
+}
