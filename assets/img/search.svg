@@ -8,8 +8,8 @@
 </style>
 
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" >
-		<stop  offset="0" style="stop-color:#2DC100"/>
-		<stop  offset="1" style="stop-color:#2DC100"/>
+		<stop  offset="0" style="stop-color:#2563EB"/>
+		<stop  offset="1" style="stop-color:#2563EB"/>
 	</linearGradient>
 
 	<path class="st1" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
