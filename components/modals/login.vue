@@ -397,7 +397,7 @@ export default {
 .popup .d-flex a {
   text-decoration: none;
   text-align: right;
-  color: #2DC100;
+  color: #2563EB;
   font-size: 12px;
   font-weight: bold;
 }

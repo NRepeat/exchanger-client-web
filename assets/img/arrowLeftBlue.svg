@@ -6,8 +6,8 @@
             }
         </style>
         <linearGradient id="linear-gradient" gradientUnits="userSpaceOnUse">
-            <stop  offset="0" style="stop-color:#2DC100"/>
-            <stop  offset="1" style="stop-color:#2DC100"/>
+            <stop  offset="0" style="stop-color:#2563EB"/>
+            <stop  offset="1" style="stop-color:#2563EB"/>
         </linearGradient>
     </defs>
     <path fill-rule="evenodd" clip-rule="evenodd"
