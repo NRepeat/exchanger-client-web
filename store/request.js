@@ -12,7 +12,7 @@ export const state = () => ({
   current_page: 1,
   status: {
     deleted: {color: "red"},
-    done: {color: "green"},
+    done: {color: "#2563EB"},
     errorPayment: {color: "red"},
     errorPayout: {color: "red"},
     hold: {color: "blue"},
@@ -20,7 +20,7 @@ export const state = () => ({
     inProgressPayout: {color: "grey"},
     new: {color: "gold"},
     returned: {color: "cyan"},
-    waitPayment: {color: "green"}
+    waitPayment: {color: "#2563EB"}
   }
 });
 export const getters = {

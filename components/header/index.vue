@@ -139,7 +139,7 @@ export default {
       } else if (this.$i18n.locale === 'eu') {
         return require('~/assets/img/flag/us.svg')
       } else if (this.$i18n.locale === 'ru') {
-        return require('~/assets/img/flag/ru.svg')
+        return require('~/assets/img/flag/ru-white.svg')
       } else {
         return require('~/assets/img/flag/us.svg')
       }

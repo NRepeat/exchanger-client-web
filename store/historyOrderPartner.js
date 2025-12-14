@@ -6,7 +6,7 @@ export const state = () => ({
   current_page: 1,
   status: {
     deleted: {color: "red"},
-    done: {color: "green"},
+    done: {color: "#2563EB"},
     errorPayment: {color: "red"},
     new: {color: "gold"},
     returned: {color: "cyan"}

@@ -113,7 +113,7 @@
                              xmlns="http://www.w3.org/2000/svg">
                           <circle r="14" cx="16" cy="16" fill="transparent" stroke="#E1E4ED"
                                   stroke-dasharray="87.96459430051421" stroke-width="4" stroke-dashoffset="0" />
-                          <circle r="14" cx="16" cy="16" fill="transparent" stroke="#2DC100"
+                          <circle r="14" cx="16" cy="16" fill="transparent" stroke="#2563EB"
                                   stroke-dasharray="87.96459430051421" stroke-width="4" :stroke-dashoffset="progressBar"
                                   transform="rotate(-90 16 16)" />
                         </svg>
